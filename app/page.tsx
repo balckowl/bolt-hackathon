@@ -485,7 +485,7 @@ export default function MacOSDesktop() {
 		try {
 			let url = appUrlInput.trim();
 			if (!url.startsWith("http://") && !url.startsWith("https://")) {
-				url = "https://" + url;
+				url = `https://${url}`;
 			}
 
 			// Try to fetch site metadata
